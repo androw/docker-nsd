@@ -1,0 +1,24 @@
+$ORIGIN nsd.example.
+$TTL 7200
+
+; SOA
+
+@       IN      SOA    ns.nsd.example. postmaster.nsd.example. (
+                                        1234567890 ; Serial
+                                        7200       ; Refresh
+                                        1800       ; Retry
+                                        1209600    ; Expire
+                                        86400 )    ; Minimum
+
+; NAMESERVERS
+
+@                   IN                NS                   ns.nsd.example.
+
+; A RECORDS
+
+@                   IN                A                    127.0.0.1
+
+; AAAA RECORDS
+
+@                   IN                AAAA                 0::1
+
